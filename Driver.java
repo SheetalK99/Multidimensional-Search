@@ -1,16 +1,11 @@
-/** Driver code for LP3
- *  @author rbk
- */
 
-// Change to your net id
-package sak170006;
 
 import java.io.File;
 import java.util.List;
 import java.util.LinkedList;
 import java.util.Scanner;
 
-public class LP3Driver {
+public class Driver {
     public static void main(String[] args) throws Exception {
         Scanner in;
         if (args.length > 0 && !args[0].equals("-")) {

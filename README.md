@@ -1,14 +1,16 @@
 # Multidimensional-Search
 
-Multi-dimensional search: Consider the web site of a seller like Amazon.  
-They carry tens of thousands of products, and each product has many
-attributes (Name, Size, Description, Keywords, Manufacturer, Price, etc.).  
-The search engine allows users to specify attributes of products that
-they are seeking, and shows products that have most of those
-attributes.  To make search efficient, the data is organized using
-appropriate data structures, such as balanced trees.  But, if products
-are organized by Name, how can search by price implemented efficiently?
-The solution, called indexing in databases, is to create a new set of
-references to the objects for each search field, and organize them to
-implement search operations on that field efficiently.  As the objects
-change, these access structures have to be kept consistent.
+Multidimensional search implementation that allows efficient search by multiple attributes by creating references to objects for each search field. This is useful for several applications like ecommerce websites that have millions of products each with multiple attributes like Name, Brand, Price, Size, Description, etc. The search feature should allow searching by any of these attributes. Hence, a specilaised data structure is required that supports multidimensional search and is consistent at all times.
+
+## Supported Operations
+* Insert: Insert a new item. If it already exists replace the item with new values for all attributes
+* Find   :Find item by id
+* Delete : Delete item by id
+* FindMinPrice : Find item with certain description that has least price
+* FindMaxPrice : Find item with certain description that has maximum price
+* FindPriceRange: Find items in given price range
+* PriceHike: Increase price of product by x%
+* RemoveNames: Remove items with certain description
+
+## Getting started
+Give as input test data to the Driver file
